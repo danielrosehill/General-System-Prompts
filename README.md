@@ -1,4 +1,4 @@
-# Just A Few ... "General" System Prompts
+# 🤖 Just A Few ... "General" System Prompts
  
 ![LLM](https://img.shields.io/badge/LLM-blue)
 ![Prompt Engineering](https://img.shields.io/badge/Prompt_Engineering-green)
@@ -16,10 +16,39 @@ This repo will contain a very small selection of general system prompts as I kee
 
 As templates, I'll also add any publicly accesible ones from major platforms that I can find to serve as guidelines of sorts. [Anthropic](https://docs.anthropic.com/en/release-notes/system-prompts#feb-24th-2025) open-sources their system prompts!
 
-## Specific Parts Of This Repo
+## 🗺️ Specific Parts Of This Repo
 
-- `vendor-models` Contains system prompts that are based upon those of real major vendor models, stripped of some brand references and guardrails. 
+- 🏢 `vendor-models` Contains system prompts that are based upon those of real major vendor models, stripped of some brand references and guardrails. 
+- 🎯 `system-prompts/` The core directory containing various prompt configurations:
+  - 🎭 `model-personalities/` Defines different AI personality traits:
+    - Standard personalities: brusque, creative, empathetic, encouraging, flamboyant, formal, ideator
+    - `slightly-deviant/` Contains more unique personality configurations
+  - ⛔ `negative-prompts/` Contains prompts defining what the model should not do
+  - 🌍 `user-geolocation/` Geographic-specific configurations (e.g., American, Israeli)
+  - 👤 `user-personality/` Tailored prompts for different user types (philosophers, tech people, etc.)
+  - 🌈 `user-worldview/` Prompts reflecting different philosophical perspectives (optimists, realists)
 
+- 🛠️ `build-assistants/` Contains tools for prompt configuration:
+  - ⚡ `create-meta-configs/` Features a powerful meta-configuration system that:
+    - Acts as a prompt builder combining different stylistic elements
+    - Allows creating generalist system prompts by combining:
+      - 🎨 User personality traits
+      - 🗳️ User political views
+      - 📍 User geolocation
+      - 🤖 Model personality preferences
+    - Example use: "Create a system prompt for an Israeli user with an optimistic personality who prefers enthusiastic AI interactions"
+  - 📝 `create-individual-configs/` For building standalone configurations
+
+- `by-vendors/` Contains reference prompts from major vendors:
+  - `anthropic/` Includes Anthropic's open-sourced system prompts
+
+## Repository Structure Highlights
+
+1. **Modular Design**: The repository uses a modular approach where different aspects of system prompts are separated into distinct categories
+2. **Meta Configuration**: The meta system prompt assistant (`build-assistants/create-meta-configs/`) serves as a powerful tool for combining different prompt elements into cohesive configurations
+3. **Personality Matrix**: Extensive collection of both model and user personality configurations
+4. **Geographic Awareness**: Includes geolocation-specific prompts for different user bases
+5. **Vendor References**: Maintains reference implementations from major vendors for benchmarking
 
 ## Third Person Or Second Person?
 

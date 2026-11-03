@@ -3,6 +3,8 @@
 ![LLM](https://img.shields.io/badge/LLM-blue)
 ![Prompt Engineering](https://img.shields.io/badge/Prompt_Engineering-green)
 
+**Write-up:** [My AI prompt libraries, and which one to use](https://blog.danielrosehill.com/posts/ai-prompt-libraries-which-one-to-use-tngfmp/)
+
 Here is a quandary that those who work with LLMs via API through self-hosted chat interfaces (etc) are familiar with:
 
 - Without any system prompt at all (at least one visible to the user), the default model behavior feels a little bit flat and lifeless.
